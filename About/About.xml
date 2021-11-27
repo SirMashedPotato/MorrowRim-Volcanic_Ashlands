@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>MorrowRim - Volcanic Ashlands</name>
+	<packageId>SirMashedPotato.MorrowRim.VolcanicAshlands</packageId>
+	<author>SirMashedPotato</author>
+	<supportedVersions>
+    	<li>1.2</li>
+    	<li>1.3</li>
+	</supportedVersions>
+	<description>Adds a new Morrowind inspired biome, the Volcanic Ashlands, along with some new plants, terrain and weather. Volcanic ashlands biomes will generate randomly on top of ashlands biomes, using BiomesKit by Odeum.\n\nAn area of ashlands that is still experiencing extreme volcanic activity. Intense heat emanating from lava pools combined with frequent ash storms have limited the variety of life found here. Luckily these regions are largely untouched by blight. The terrain found here is a mix of fertile ash, cracked ground and volcanic stone, with lava pools commonly scattering the surface.\n\n-Requires Harmony.\n-Requires [HLX] ReGrowth - Core.\n-Requires BiomesKit, or any other mod that implements BiomesKit.\n-Requires MorrowRim.\n-Includes several patches to add wild animals and plants to this biome.\n-Includes several patches for Vanilla Expanded mods.\n-Includes a patch for RimBees, adding wild hives.\n-Includes a patch for Camouflage and Stealth, with the biome using desert camo.\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	</description>		
+	<modDependencies>
+      <li>
+        <packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      </li>
+	  <li>
+        <packageId>ReGrowth.BOTR.Core</packageId>
+		<displayName>[HLX] ReGrowth - Core</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2260097569</steamWorkshopUrl>
+      </li>
+	  <li>
+        <packageId>Odeum.BiomesKit</packageId>
+        <displayName>BiomesKit</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2153006237</steamWorkshopUrl>
+      </li>
+	  <li>
+        <packageId>SirMashedPotato.MorrowRim</packageId>
+        <displayName>MorrowRim</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2044102009</steamWorkshopUrl>
+      </li>
+    </modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>sarg.alphabiomes</li>
+		<li>ReGrowth.BOTR.Core</li>
+		<li>SirMashedPotato.MorrowRim</li>
+		<li>vanillaexpanded.achievements</li>
+		<li>Odeum.BiomesKit</li>
+	</loadAfter>
+</ModMetaData>

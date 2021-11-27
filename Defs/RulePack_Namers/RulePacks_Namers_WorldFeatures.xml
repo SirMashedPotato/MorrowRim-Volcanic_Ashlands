@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanicAshlands</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>terrain_word(p=4)->foyoda</li>
+			<li>terrain_word(p=4)->scar</li>
+			<li>terrain_word->gash</li>
+			<li>terrain_word->wasteland</li>
+			<li>terrain_word->badlands</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

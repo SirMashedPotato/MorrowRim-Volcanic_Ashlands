@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- dense lingering ash clouds -->
+	<WeatherDef>
+		<defName>MorrowRim_DenseLingeringAshClouds</defName>
+		<label>dense lingering ash clouds</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.5</reduceLightLevelsFactor>
+            </li>
+		</modExtensions>
+		<description>Dense ash clouds obscure sunlight, greatly reducing the light level.</description>
+		<repeatable>true</repeatable>
+		<favorability>Bad</favorability>
+		<perceivePriority>0</perceivePriority>
+		<ambientSounds>
+		  <li>Ambient_Wind_Fog</li>
+		</ambientSounds>   
+		<!-- Colors are Clear -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- fire inferno -->
+	<!--
+	<WeatherDef>
+		<defName>MorrowRim_FireInferno</defName>
+		<label>fire inferno</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <increaseHeatLevels>true</increaseHeatLevels>
+				<isFireStorm>true</isFireStorm>
+				<setFireToPawns>true</setFireToPawns>
+				<burnDamage>3</burnDamage>
+				<reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.5</reduceLightLevelsFactor>
+				<isAshStorm>true</isAshStorm>
+            </li>
+		</modExtensions>
+		<description>The violent eruption of a volcano nearby has released clouds of volcanic debris and ash into the air, high winds have caused this to turn into a fire inferno. Anyone outside during this may suffer burns or even catch fire, and plants may catch on fire. Thick clouds of ash will also damage plants, and build up in lungs. This storm is full of metallic particles, causing frequent lightning strikes.\n\nLuckily it will be short lived.</description>
+		<temperatureRange>-999~999</temperatureRange>
+		<windSpeedFactor>2.0</windSpeedFactor>
+		<accuracyMultiplier>0.7</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<repeatable>false</repeatable>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>MorrowRim_outsideInFireInferno</exposedThought>
+		<moveSpeedMultiplier>0.85</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<durationRange>900~1500</durationRange>
+		<eventMakers>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_FireDamage</eventClass>
+			</li>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_AshDamage</eventClass>
+			</li>
+		</eventMakers>
+		<overlayClasses>
+		  <li>MorrowRim.WeatherOverlay_AshStorm</li>
+		  <li>MorrowRim.WeatherOverlay_AshStormAdditional</li>
+		</overlayClasses>
+
+		<skyColorsDay>
+		  <sky>(0.90,0.8,0.60)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,0.90,0.70)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.50,0.40,0.20)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.50,0.40,0.20)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	-->
+	
+	<!--========== Acid weather ==========-->
+	
+	<WeatherDef Name="MorrowRim_AcidRainBase" Abstract="True">
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+				<isFireStorm>true</isFireStorm>
+				<burnDamage>0.5</burnDamage>
+            </li>
+		</modExtensions>
+		<description>Recent volcanic activity has released an abundance of sulfur dioxide into the atmosphere, this has reacted with nearby clouds, which are now creating acid rain. Anyone outsider may suffer minor burns on uncovered body parts.\n\nThe rain also reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+		<isBad>true</isBad>
+		<temperatureRange>0~999</temperatureRange>
+		<durationRange>15000~40000</durationRange>
+		<favorability>Bad</favorability>
+		<exposedThought>MorrowRim_outsideInAcidWeather</exposedThought>
+		<ambientSounds>
+		  <li>Ambient_Rain</li>
+		</ambientSounds>
+		<rainRate>1</rainRate>
+		<overlayClasses>
+		  <li>WeatherOverlay_Rain</li>
+		</overlayClasses>
+		<eventMakers>
+			<li>
+				<averageInterval>600</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_FireDamage</eventClass>
+			</li>
+		</eventMakers>
+		<commonalityRainfallFactor>
+		  <points>
+			<li>(0, 0)</li>
+			<li>(1300, 1)</li>
+			<li>(4000, 2.0)</li>
+		  </points>
+		</commonalityRainfallFactor>  
+	</WeatherDef>
+	
+	<!-- acid rain -->
+	<WeatherDef ParentName="MorrowRim_AcidRainBase">
+		<defName>MorrowRim_AcidRain</defName>
+		<label>acid rain</label>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<perceivePriority>1</perceivePriority>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.7,0.7,0.7)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.6,0.6,0.6)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- acid thunderstorm -->
+	
+	<WeatherDef ParentName="MorrowRim_AcidRainBase">
+		<defName>MorrowRim_AcidRainThunder</defName>
+		<label>acid rainy thunderstorm</label>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<windSpeedOffset>1.25</windSpeedOffset>
+		<perceivePriority>2</perceivePriority>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<eventMakers>
+		  <li>
+			<averageInterval>1200</averageInterval>
+			<eventClass>WeatherEvent_LightningFlash</eventClass>
+		  </li>
+		  <li>
+			<averageInterval>1200</averageInterval>
+			<eventClass>WeatherEvent_LightningStrike</eventClass>
+		  </li>
+		</eventMakers>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.7,0.7,0.7)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.6,0.6,0.6)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- foggy acid rain -->
+	<WeatherDef ParentName="MorrowRim_AcidRainBase">
+		<defName>MorrowRim_AcidRainFog</defName>
+		<label>foggy acid rain</label>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<perceivePriority>1</perceivePriority>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<overlayClasses>
+		  <li>WeatherOverlay_Fog</li>
+		</overlayClasses>  
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.7,0.7,0.7)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.6,0.6,0.6)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightMid>
+	  </WeatherDef>
+
+</Defs>

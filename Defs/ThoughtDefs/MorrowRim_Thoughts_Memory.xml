@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>MorrowRim_outsideInAcidWeather</defName>
+		<durationDays>0.4</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>outside during acid rain</label>
+			<description>Ow! It's like getting pricked by dozens of burning needles!</description>
+			<baseMoodEffect>-4</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_outsideInFireInferno</defName>
+		<durationDays>0.4</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>outside during fire inferno</label>
+			<description>The world is literally burning, and I'm standing outside!</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Garden Tools</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">
+					 <xpath>
+						  Defs/TerrainDef[defName = "MorrowRim_VolcanicAsh"]/affordances
+					 </xpath>
+					 <value>
+						<li>VG_DigSpot</li>
+						<li>VG_ReclaimableSoil</li>
+					 </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					 <xpath>
+						  Defs/TerrainDef[defName = "MorrowRim_VolcanicGravel"]/affordances
+					 </xpath>
+					 <value>
+						<li>VG_DigSpot</li>
+						<li>VG_ReclaimableSoil</li>
+					 </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					 <xpath>
+						  Defs/TerrainDef[defName = "MorrowRim_RichVolcanicAsh"]/affordances
+					 </xpath>
+					 <value>
+						<li>VG_DigSpot</li>
+						<li>VG_ReclaimableSoil</li>
+					 </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					 <xpath>
+						  Defs/TerrainDef[defName = "MorrowRim_VolcanicSand"]/affordances
+					 </xpath>
+					 <value>
+						<li>VG_ReclaimableSoil</li>
+					 </value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					 <xpath>
+						  Defs/TerrainDef[defName = "MorrowRim_VolcanicCrackedGround"]/affordances
+					 </xpath>
+					 <value>
+						<li>VG_ReclaimableSoil</li>
+					 </value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

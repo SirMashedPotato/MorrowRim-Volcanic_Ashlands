@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Caves</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- add select animals to ashlands -->
+						
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="VAECaves_Wyrm"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_VolcanicAshlands>0.1</MorrowRim_VolcanicAshlands>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="VAECaves_GiantSpider"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_VolcanicAshlands>0.1</MorrowRim_VolcanicAshlands>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="VAECaves_AncientGiantSpider"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_VolcanicAshlands>0.0025</MorrowRim_VolcanicAshlands>
+					</value>
+				</li>		
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+
