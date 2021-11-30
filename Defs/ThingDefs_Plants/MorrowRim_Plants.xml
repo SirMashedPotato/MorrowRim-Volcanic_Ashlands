@@ -23,6 +23,7 @@
 		<statBases>
 		  <MaxHitPoints>30</MaxHitPoints>
 		  <Beauty>10</Beauty>
+		  <BeautyOutdoors>10</BeautyOutdoors>
 		  <Nutrition>0.2</Nutrition>
 		  <Flammability>0.2</Flammability>
 		</statBases>
@@ -57,19 +58,12 @@
 			<li Class="MorrowRim.ExtendedRaceProperties">
                 <ashResistant>Resistant</ashResistant>
             </li>
-			<li Class="MorrowRim.PlantProperties">
-				<forceOntoTerrain>true</forceOntoTerrain>
-				<whitelist>false</whitelist>
-				<terrainList>
-					<li>Marsh</li>
-					<li>MarshyTerrain</li>
-				</terrainList>
-			</li>
 		</modExtensions>
 		<description>A small fern that can often be found growing in the volcanic ashlands. It's ability to grow in poor quality soil, and resistance to extreme heat, has allowed it to grow where no other ferns dare.</description>
 		<statBases>
 		  <MaxHitPoints>30</MaxHitPoints>
 		  <Beauty>10</Beauty>
+		  <BeautyOutdoors>10</BeautyOutdoors>
 		  <Nutrition>0.2</Nutrition>
 		  <Flammability>0.2</Flammability>
 		</statBases>
@@ -156,6 +150,7 @@
 		</graphicData>
 		<statBases>
 		  <Beauty>2</Beauty>
+		  <BeautyOutdoors>2</BeautyOutdoors>
 		  <Flammability>0.2</Flammability>
 		</statBases>
 		<plant>
