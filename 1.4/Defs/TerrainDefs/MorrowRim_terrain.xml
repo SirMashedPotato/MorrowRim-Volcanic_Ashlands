@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Volcanic Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_VolcanicAsh</defName>
+		<label>volcanic ash</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_VolcanicAsh</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		  <li>MorrowRim_AshCastle</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.3</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	<!-- Volcanic cracked ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_VolcanicCrackedGround</defName>
+		<label>volcanic cracked ground</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_VolcanicCrackedGround</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>300</renderPrecedence>
+		<pathCost>8</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.4</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+	
+	<!-- Rich Volcanic Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_RichVolcanicAsh</defName>
+		<label>rich volcanic ash</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_RichVolcanicAsh</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		  <li>MorrowRim_AshCastle</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.5</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	<!-- volcanic gravel -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_VolcanicGravel</defName>
+		<label>volcanic gravel</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_VolcanicGravel</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.7</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>gravel</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>GravelInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	<!-- Volcanic Sand -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_VolcanicSand</defName>
+		<label>volcanic sand</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_VolcanicSand</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<pathCost>6</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		  <li>MorrowRim_AshCastle</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0.2</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>SandInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+	
+</Defs>

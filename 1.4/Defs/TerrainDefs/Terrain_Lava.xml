@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ReGrowthCore.ActiveTerrainDef ParentName="RG_LavaBase">
+		<defName>MorrowRimRG_LavaDumb</defName>
+		<texturePath>Terrain/Surfaces/Lava</texturePath>
+		<label>lava</label>
+		<renderPrecedence>395</renderPrecedence>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Cleanliness>-4</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>RG_Lava</li>
+		</affordances>
+	</ReGrowthCore.ActiveTerrainDef>
+
+</Defs>

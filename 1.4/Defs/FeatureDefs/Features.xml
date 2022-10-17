@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FeatureDef>
+    <defName>MorrowRim_VolcanicAshlands</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>443</order>
+     <rootBiomes>
+      <li>MorrowRim_VolcanicAshlands</li>
+    </rootBiomes>
+    <nameMaker>MorrowRim_NamerVolcanicAshlands</nameMaker>
+  </FeatureDef>
+
+</Defs>
